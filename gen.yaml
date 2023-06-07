@@ -1,4 +1,9 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 49302206f1e6d3b3f55ae22e809c8271
+  docVersion: 0.9.1
+  speakeasyVersion: 1.44.2
+  generationVersion: 2.35.9
 generation:
   comments:
     disableComments: false
@@ -8,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 php:
-  version: 0.0.1
+  version: 1.0.0
   maxMethodParams: 0
   namespace: lk\api
   packageName: lk/api
