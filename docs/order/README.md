@@ -107,7 +107,7 @@ try {
     $request->shipping->recipient->phone = '413-650-1830 x165';
 
     $requestSecurity = new OrderValidatedApiV1OrdersPostSecurity();
-    $requestSecurity->oAuth2PasswordBearer = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->oAuth2PasswordBearer = '';
 
     $response = $sdk->order->orderValidatedApiV1OrdersPost($request, $requestSecurity);
 

@@ -35,7 +35,7 @@ try {
     $request->orderId = 735194;
 
     $requestSecurity = new StatusRequestValidatedApiV1OrdersOrderIdStatusRequestPostSecurity();
-    $requestSecurity->oAuth2PasswordBearer = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->oAuth2PasswordBearer = '';
 
     $response = $sdk->orderStatus->statusRequestValidatedApiV1OrdersOrderIdStatusRequestPost($request, $requestSecurity);
 
@@ -104,7 +104,7 @@ try {
     $request->orderId = 433288;
 
     $requestSecurity = new StatusValidatedApiV1OrdersOrderIdStatusPostSecurity();
-    $requestSecurity->oAuth2PasswordBearer = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->oAuth2PasswordBearer = '';
 
     $response = $sdk->orderStatus->statusValidatedApiV1OrdersOrderIdStatusPost($request, $requestSecurity);
 

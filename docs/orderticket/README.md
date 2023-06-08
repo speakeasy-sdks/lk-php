@@ -34,7 +34,7 @@ try {
     $request->ticketId = 'necessitatibus';
 
     $requestSecurity = new NewTicketApiV1TicketPostSecurity();
-    $requestSecurity->oAuth2PasswordBearer = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->oAuth2PasswordBearer = '';
 
     $response = $sdk->orderTicket->newTicketApiV1TicketPost($request, $requestSecurity);
 
@@ -78,7 +78,7 @@ try {
     $request->ticketId = 'in';
 
     $requestSecurity = new TicketStatusApiV1TicketTicketIdCommentPostSecurity();
-    $requestSecurity->oAuth2PasswordBearer = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->oAuth2PasswordBearer = '';
 
     $response = $sdk->orderTicket->ticketStatusApiV1TicketTicketIdCommentPost($request, $requestSecurity);
 
