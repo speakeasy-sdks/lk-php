@@ -9,9 +9,9 @@ declare(strict_types=1);
 namespace lk\api\Models\Shared;
 
 
-/** An enumeration. */
-enum PaymentMethod: int
+class ResponseData
 {
-    case Zero = 0;
-    case One = 1;
+	public function __construct()
+	{
+	}
 }

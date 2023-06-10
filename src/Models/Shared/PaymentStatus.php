@@ -12,5 +12,5 @@ namespace lk\api\Models\Shared;
 /** An enumeration. */
 enum PaymentStatus: int
 {
-    case ZERO = 0;
+    case Zero = 0;
 }

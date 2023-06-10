@@ -11,6 +11,6 @@ namespace lk\api\Models\Shared;
 
 enum OrderStatuses: int
 {
-    case ZERO = 0;
-    case ONE = 1;
+    case Zero = 0;
+    case One = 1;
 }

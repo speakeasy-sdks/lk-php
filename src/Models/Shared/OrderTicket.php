@@ -61,7 +61,7 @@ class OrderTicket
 		$this->decision = "";
 		$this->orderId = 0;
 		$this->solutionTime = new \DateTime();
-		$this->status = \lk\api\Models\Shared\OrderTicketStatus::AE5F2F10_F46B1410_FD9A0050BA5D6C38;
+		$this->status = \lk\api\Models\Shared\OrderTicketStatus::Ae5f2f10F46b1410Fd9a0050ba5d6c38;
 		$this->ticketId = "";
 	}
 }

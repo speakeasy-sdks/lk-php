@@ -33,6 +33,12 @@ try {
 }
 ```
 
+
+### Response
+
+**[?\lk\api\Models\Operations\OrderSchemaApiV1OrdersSchemaGetResponse](../../models/operations/OrderSchemaApiV1OrdersSchemaGetResponse.md)**
+
+
 ## orderValidatedApiV1OrdersPost
 
 Checks if JSON has valid schema and adds request to create new order. No multiple orders will be created for the same **order_id**, even if request is accepted. Only first order request for **order_id** is created.
@@ -83,8 +89,8 @@ try {
     $request->merchantId = 461479;
     $request->orderId = 520478;
     $request->payment = new Payment();
-    $request->payment->method = PaymentMethod::ONE;
-    $request->payment->status = PaymentStatus::ZERO;
+    $request->payment->method = PaymentMethod::One;
+    $request->payment->status = PaymentStatus::Zero;
     $request->shipping = new Shipping();
     $request->shipping->address = new NPPackStation();
     $request->shipping->address->city = 'Carrollcester';
@@ -98,7 +104,7 @@ try {
     $request->shipping->address->street->name = 'Mr. Jared Ritchie';
     $request->shipping->address->warehouseId = '4f15471b-5e6e-413b-99d4-88e1e91e450a';
     $request->shipping->address->warehouseNumber = 842342;
-    $request->shipping->method = ShippingMethod::NOVAPOSHTA_PACKSTATION;
+    $request->shipping->method = ShippingMethod::NovaposhtaPackstation;
     $request->shipping->price = 1317.97;
     $request->shipping->recipient = new Recipient();
     $request->shipping->recipient->firstName = 'Luther';
@@ -118,3 +124,16 @@ try {
     // handle exception
 }
 ```
+
+### Parameters
+
+| Parameter                                                                                                                           | Type                                                                                                                                | Required                                                                                                                            | Description                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `$request`                                                                                                                          | [\lk\api\Models\Shared\Order](../../models/shared/Order.md)                                                                         | :heavy_check_mark:                                                                                                                  | The request object to use for the request.                                                                                          |
+| `security`                                                                                                                          | [\lk\api\Models\Operations\OrderValidatedApiV1OrdersPostSecurity](../../models/operations/OrderValidatedApiV1OrdersPostSecurity.md) | :heavy_check_mark:                                                                                                                  | The security requirements to use for the request.                                                                                   |
+
+
+### Response
+
+**[?\lk\api\Models\Operations\OrderValidatedApiV1OrdersPostResponse](../../models/operations/OrderValidatedApiV1OrdersPostResponse.md)**
+

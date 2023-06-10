@@ -11,5 +11,5 @@ namespace lk\api\Models\Shared;
 
 enum ShippingMethod: string
 {
-    case NOVAPOSHTA_PACKSTATION = 'novaposhta_packstation';
+    case NovaposhtaPackstation = 'novaposhta_packstation';
 }

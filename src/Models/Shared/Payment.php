@@ -37,7 +37,7 @@ class Payment
     
 	public function __construct()
 	{
-		$this->method = \lk\api\Models\Shared\PaymentMethod::ZERO;
-		$this->status = \lk\api\Models\Shared\PaymentStatus::ZERO;
+		$this->method = \lk\api\Models\Shared\PaymentMethod::Zero;
+		$this->status = \lk\api\Models\Shared\PaymentStatus::Zero;
 	}
 }

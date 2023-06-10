@@ -38,6 +38,6 @@ class OrderStatus
 	public function __construct()
 	{
 		$this->orderId = 0;
-		$this->status = \lk\api\Models\Shared\OrderStatuses::ZERO;
+		$this->status = \lk\api\Models\Shared\OrderStatuses::Zero;
 	}
 }

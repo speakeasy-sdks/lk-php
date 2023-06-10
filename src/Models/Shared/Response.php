@@ -17,15 +17,10 @@ namespace lk\api\Models\Shared;
  */
 class Response
 {
-    /**
-     * $data
-     * 
-     * @var ?array<string, mixed> $data
-     */
 	#[\JMS\Serializer\Annotation\SerializedName('data')]
-    #[\JMS\Serializer\Annotation\Type('array<string, mixed>')]
+    #[\JMS\Serializer\Annotation\Type('lk\api\Models\Shared\ResponseData')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?array $data = null;
+    public ?ResponseData $data = null;
     
     /**
      * $errors

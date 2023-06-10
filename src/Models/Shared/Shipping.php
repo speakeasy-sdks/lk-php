@@ -47,7 +47,7 @@ class Shipping
 	public function __construct()
 	{
 		$this->address = new \lk\api\Models\Shared\NPPackStation();
-		$this->method = \lk\api\Models\Shared\ShippingMethod::NOVAPOSHTA_PACKSTATION;
+		$this->method = \lk\api\Models\Shared\ShippingMethod::NovaposhtaPackstation;
 		$this->price = null;
 		$this->recipient = new \lk\api\Models\Shared\Recipient();
 	}
